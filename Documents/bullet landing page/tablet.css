@@ -1,0 +1,127 @@
+@media (max-width: 768px) {
+    html{
+        font-size: 30%;
+    }
+    .navbar {
+        background-color:black;
+        overflow: hidden;
+        display: flex;
+        justify-content:space-around;
+        height: 100px;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .nav-group{
+        position: relative;
+        top:-.5rem;
+    }
+        
+    .navbar a, .dropdown {
+        float: left;
+        font-size: 1.6rem; /* 16px */
+        color: white;
+        text-align: center;
+        padding: 1.6rem 2.0rem; /* 16px 20px */
+        text-decoration: none;
+    }
+    
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .dropdown  {
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 16rem; /* 160px */
+        box-shadow: 0px 0.8rem 1.6rem 0px rgba(0,0,0,0.2); /* 8px 16px */
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        float: none;
+        color:black;
+        padding: 1.2rem 1.6rem; /* 12px 16px */
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .navbar h1 {
+        float: left;
+        font-size: 2.8rem; /* 30px */
+        color:#da291c;
+        margin: 0;
+        padding: 1.6rem 2.0rem; /* 16px 20px */
+    }
+    
+    .navbar a, .navbar h1 {
+        line-height: 2.4rem; /* 24px */
+    }
+    .dropbtn{
+        border: none;
+        background-color:black;
+        color: white;
+        font-size: 1.8rem;
+        font-family: cursive;
+    }
+    
+    .nav-color:hover{
+        color:#da291c;
+    }
+
+    /* ===============Bullet image div=============== */
+    .img1 h2{
+        position: relative;
+        text-align: right;
+        top: 20rem;
+        font-size: 3rem;
+        color: white;
+        right: 9rem;
+    }
+
+    /* ====================Features==================== */
+    .div-wid{
+        width: 33.33333333333333%;
+        height: 70vh;
+    }
+    
+    /* ====================Test Ride==================== */
+    .ride h1{
+        font-size: 6rem;
+        font-weight: bold;
+    }
+
+    /* ====================Test Ride Form==================== */
+    .form{
+        display: flex;
+        gap: 1.3rem;
+        margin: 15px 18rem;
+    }
+    .policy{
+        margin: 0px 18rem;
+    }
+  }
+
+  /* ====================Laptop==================== */
+  @media (max-width: 1024px) {
+   html{
+    font-size: 49%;
+   }
+  }

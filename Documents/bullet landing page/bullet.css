@@ -1,0 +1,361 @@
+html {
+    font-size: 63%;
+    font-family: cursive;
+    /* box-sizing: border-box; */
+}
+
+body {
+    /* position: relative; */
+    /* bottom: 10px;
+    right: 8px;
+    width: 100%;
+    height: 0px;
+    left: .4px; */
+}
+
+/*===============1st Navigation Bar===============*/
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    font-family: cursive;
+    z-index: 1;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.navbar a,
+.dropdown {
+    float: left;
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    padding: 1.6rem 2.0rem;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    /* overflow: hidden; */
+    z-index: 1;
+}
+
+.dropdown {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 16rem;
+    box-shadow: 0px 0.8rem 1.6rem 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar h1 {
+    float: left;
+    font-size: 3rem;
+    color: #da291c;
+    margin: 0;
+    padding: 1.6rem 2.0rem;
+    font-weight: bolder;
+}
+
+.navbar a,
+.navbar h1 {
+    line-height: 2.4rem;
+}
+
+.dropbtn {
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    font-family: cursive;
+}
+.nav-2nd a{
+    text-decoration: none;
+    color: white;
+}
+.nav-color:hover {
+    color: #da291c;
+}
+.menu-icon{
+    display: none !important;
+}
+/* ================2nd Navigation Bar=============== */
+.nav-2nd {
+    background-color: #212121;
+    position: sticky;
+    top: 0px;
+    height: 70px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav-2nd h1 {
+    font-size: 3rem;
+    position: sticky;
+    top: 10px;
+}
+
+.nav-2nd div {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin-left: 3rem;
+    position: sticky;
+    top: 10px;
+}
+
+.nav-2nd h2 {
+    cursor: pointer;
+    position: sticky;
+    top: 10px;
+}
+
+.nav-2nd button {
+    margin-right: 3rem;
+    height: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #da291c;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 10px;
+}
+
+/* ===============Bullet Image div=============== */
+.bullet-img{
+    position: relative;
+    bottom: 41px;
+}
+.img1 h2{
+    position: relative;
+    text-align: right;
+    top: 25rem;
+    font-size: 3rem;
+    color: white;
+    right: 16rem;
+}
+
+/* ===============Features=============== */
+.features{
+    position: relative;
+    bottom: 19px;
+}
+.features h2{
+    text-align: center;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+.features-img{
+    display: flex;
+    gap:0px;
+}
+
+.div-wid img{
+    width: 34vw;
+}
+.text-hov h1, h5{
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor:alias;
+}
+.txthov{
+    display: none;
+    position: relative;
+    bottom: 220px;
+    color:white;
+    padding: 0px 2rem;
+    text-shadow: #212121;
+}
+/* .hovered:hover + .txthov{
+    display: block;
+} */
+
+/* ====================HIGHTLIGHTS==================== */
+.hightlights{
+    height: 80vh;
+    margin-top: 1rem;
+    padding: 6rem;
+}
+.hightlights h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.bor-div{
+    border-left: 1px solid black;
+}
+.engine{
+    margin-left: 15rem;
+    width: 32vw;
+    margin-top: 1.2rem;
+}
+.engine h1{
+    color: #da291c;
+    font-size: 3rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.braker h3{
+    color: #888888;
+}
+
+/* ====================Test Ride==================== */
+.test-ride{
+    margin-top: 2rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #0ef;
+    color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.ride h1{
+    font-size: 7rem;
+    font-weight: bold;
+}
+.ride h5{
+    text-align: center;
+}
+
+/* ====================Test Ride Form==================== */
+.form{
+    display: flex;
+    gap: 1.3rem;
+    margin: 15px 30rem;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1.3rem;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1.3rem;
+}
+.form-wtd{
+    height: 4rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+   
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.policy{
+    margin: 0px 35rem;
+}
+.box input[type=checkbox] {
+    zoom: 1.5;
+}
+.policy button{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #45a049;
+    border: none;
+    margin: 13px 26rem;
+    padding: .5rem;
+    border-radius: 2rem;
+}
+.policy p{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* ====================Footer Section==================== */
+.container-fluid{
+    background-color: #e5e3e3;
+}
+.footer-section{
+    height: 10rem;
+}
+.media{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    margin: 0px 2rem;
+}
+
+/* ====================Footer Menu Section==================== */
+.footer-menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 15%;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #141313;
+}
+.copy-right-wtd{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3px;
+    border-top: 1px solid black;
+    margin: 2rem 10px;
+}
+.condition{
+    display: flex;
+    gap: 1rem;
+}
+.condition a{
+    text-decoration: none;
+}
+.condition a h5{
+    cursor: pointer;
+}
